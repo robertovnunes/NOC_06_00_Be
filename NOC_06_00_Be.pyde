@@ -39,7 +39,6 @@ def draw():
     text("Comida: {}".format(comida), 50, 50)
     if floor(PVector.sub(food.position, vehicle.position).mag()) > 0:
         vehicle.seek(food.position)
-    #if floor(PVector.sub(food.position, vehicle.position).mag()) == 0:
     else:
         comida = comida + 1
         FoodX = random(640)
@@ -48,8 +47,3 @@ def draw():
         food = Food(foodPosition)
         food.display()
         
-        
-        
-        
-        
-   # vehicle.display()
